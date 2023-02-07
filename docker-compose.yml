@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+    pg_db_advanced_sql_tasks:
+        image: postgres
+        restart: always
+        environment:
+            - POSTGRES_PASSWORD=root
+            - POSTGRES_USER=root
+            - POSTGRES_DB=tasks
+        ports:
+            - "5499:5432"
